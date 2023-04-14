@@ -1,7 +1,7 @@
 <template>
   <div class="header-text-container">
     <div class="title">
-      <div>Discover your next <span>favorite book</span> with <br> ReadGPT</div>
+      <div>Find your next <span>favorite book</span> with <br> ReadGPT</div>
     </div>
     <div class="subtitle">
       <div>

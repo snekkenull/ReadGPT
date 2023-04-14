@@ -2,8 +2,8 @@
   <div class="main">
     <the-navbar/>
     <the-title/>
-    <the-form/>
-    <the-result/>
+    <the-form @on-submit="submit" :loading="loader"/>
+    <the-result :results="result"/>
   </div>
 
   <div class="footer">
@@ -11,19 +11,53 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script>
 import TheNavbar from "@/components/TheNavbar.vue";
 import TheFooter from "@/components/TheFooter.vue";
 import TheTitle from "@/components/TheTitle.vue";
 import TheForm from "@/components/TheForm.vue";
 import TheResult from "@/components/TheResult.vue";
+import {Configuration, OpenAIApi} from "openai";
 
-export default defineComponent({
+export default {
   name: 'App',
   components: {TheResult, TheForm, TheTitle, TheFooter, TheNavbar},
 
-});
+  data() {
+    return {
+      result: null,
+      loader: false,
+    }
+  },
+
+  methods: {
+    async submit(prompt) {
+      try {
+        const config = new Configuration({
+          organization: process.env.VUE_APP_ORG_ID,
+          apiKey: process.env.VUE_APP_API_KEY,
+        })
+
+        const openai = new OpenAIApi(config);
+
+        this.loader = true
+        const response = await openai.createCompletion({
+          model: 'text-davinci-003',
+          prompt: `list of recommendations for what to read, like book "${prompt}"`,
+          max_tokens: 200,
+          temperature: 0.5,
+        })
+
+        this.result = response.data.choices[0].text.split('\n').filter((item) => item !== '')
+        console.log(this.result)
+        this.loader = false
+
+      } catch (e) {
+        console.log(e)
+      }
+    }
+  }
+};
 </script>
 
 <style>

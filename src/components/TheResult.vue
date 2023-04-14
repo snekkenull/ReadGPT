@@ -1,11 +1,11 @@
 <template>
-  <div class="result-container">
+  <div v-if="results" class="result-container">
     <div class="regenerate-btn">
       <button>regenerate</button>
     </div>
 
     <div class="results">
-      <div class="result-text" v-for="result in results" :key="result.id">{{ result.text }}</div>
+      <div class="result-text" v-for="result in results">{{ result }}</div>
     </div>
   </div>
 </template>
@@ -15,19 +15,11 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "TheResult",
-
-  data() {
-    return {
-      results: [
-        {id: 1, text: "1. Hard thing to hard things"},
-        {id: 2, text: "2. Hard thing to hard things"},
-        {id: 3, text: "3. Hard thing to hard things"},
-        {id: 4, text: "4. Hard thing to hard things"},
-        {id: 5, text: "5. Hard thing to hard things"},
-        {id: 6, text: "6. Hard thing to hard things"},
-        {id: 7, text: "7. Hard thing to hard things"},
-      ],
-    };
+  props: {
+    results: {
+      type: Array,
+      required: false,
+    },
   },
 
 })
@@ -44,9 +36,8 @@ export default defineComponent({
 }
 
 .results {
-  width: 1310px;
+  width: 920px;
   display: flex;
-  align-items: center;
   justify-content: center;
   margin: 0 auto;
   flex-direction: column;
@@ -57,7 +48,7 @@ export default defineComponent({
   font-family: NeueHaasDisplay-Roman;
   letter-spacing: 0.3px;
   font-size: 1.2rem;
-  text-align: center;
+  text-align: left;
 }
 
 .regenerate-btn button {
