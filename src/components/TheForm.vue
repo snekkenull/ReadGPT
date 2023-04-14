@@ -11,7 +11,7 @@
             <div v-if="loading" class="loader"></div>
           </span>
         </button>
-        <input type="text" placeholder="Atomic habits, Deep work, Einstein" v-model="prompt">
+        <input type="text" placeholder="Atomic habits, Deep work, Rework" v-model="prompt">
       </form>
     </div>
   </div>

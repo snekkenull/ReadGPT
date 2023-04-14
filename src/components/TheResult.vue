@@ -1,11 +1,13 @@
 <template>
   <div v-if="results" class="result-container">
-    <div class="regenerate-btn">
-      <button>regenerate</button>
-    </div>
+<!--    <div class="regenerate-btn">-->
+<!--      <button>regenerate</button>-->
+<!--    </div>-->
 
     <div class="results">
-      <div class="result-text" v-for="result in results">{{ result }}</div>
+      <div class="results-container">
+        <div class="result-text" v-for="result in results">{{ result }}</div>
+      </div>
     </div>
   </div>
 </template>
@@ -39,7 +41,13 @@ export default defineComponent({
   width: 920px;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
+  flex-direction: column;
+}
+
+.results-container {
+  display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
