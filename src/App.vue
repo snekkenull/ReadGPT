@@ -49,7 +49,6 @@ export default {
         })
 
         this.result = response.data.choices[0].text.split('\n').filter((item) => item !== '')
-        console.log(this.result)
         this.loader = false
 
       } catch (e) {

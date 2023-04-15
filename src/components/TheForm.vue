@@ -94,8 +94,7 @@ export default defineComponent({
       0px 15.1px 20.5px rgba(0, 0, 0, 0.024),
       0px 28.1px 35.2px rgba(0, 0, 0, 0.026),
       0px 51.7px 60.6px rgba(0, 0, 0, 0.031),
-      0px 72px 105px rgba(0, 0, 0, 0.05)
-;
+      0px 72px 105px rgba(0, 0, 0, 0.05);
 }
 
 .form-container form input {
