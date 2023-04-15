@@ -119,4 +119,10 @@ export default defineComponent({
   cursor: pointer;
 }
 
+@media only screen and (max-width: 512px) {
+  .form-container form {
+    width: 95%;
+  }
+}
+
 </style>

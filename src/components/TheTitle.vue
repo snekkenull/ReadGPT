@@ -45,4 +45,26 @@ export default {
   text-align: center;
 }
 
+@media only screen and (max-width: 800px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 612px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .title {
+    width: 95%;
+  }
+
+  .subtitle {
+    width: 95%;
+  }
+}
+
 </style>

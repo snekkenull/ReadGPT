@@ -57,4 +57,11 @@ export default {
   width: 100%;
 }
 
+@media only screen and (max-width: 1350px) {
+  .nav-container nav {
+    width: auto;
+    padding: 0 20px;
+  }
+}
+
 </style>

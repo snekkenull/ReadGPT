@@ -74,4 +74,10 @@ export default defineComponent({
   opacity: 1;
 }
 
+@media only screen and (max-width: 1024px) {
+  .results {
+    width: 90%;
+  }
+}
+
 </style>
