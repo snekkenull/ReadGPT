@@ -11,7 +11,7 @@
             <div v-if="loading" class="loader"></div>
           </span>
         </button>
-        <input type="text" placeholder="Atomic habits, Deep work, Rework" v-model="prompt">
+        <input type="text" placeholder="詩經，三體，魯迅的書" v-model="prompt">
       </form>
     </div>
   </div>
@@ -98,7 +98,7 @@ export default defineComponent({
 }
 
 .form-container form input {
-  font-family: NeueHaasDisplay-Roman;
+  font-family: Iansui094-Regular;
   letter-spacing: 0.25px;
   width: 90%;
   border: none;

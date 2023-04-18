@@ -1,11 +1,11 @@
 <template>
   <div class="header-text-container">
     <div class="title">
-      <div>Find your next <span>favorite book</span> with <br> ReadGPT</div>
+      <div>一本好書<span>且當知己</span><br>閲GPT</div>
     </div>
     <div class="subtitle">
       <div>
-        ReadGPT is a book recommendation app based on the books <br> you've read before
+        鍵入您所喜愛的作家或作品名，<br>讓閲GPT爲您推薦。
       </div>
     </div>
   </div>
@@ -30,7 +30,7 @@ export default {
 
 .title {
   font-size: 3rem;
-  font-family: NeueHaasDisplay-Medium;
+  font-family: Iansui094-Regular;
   text-align: center;
 }
 
@@ -39,7 +39,7 @@ export default {
 }
 
 .subtitle {
-  font-family: NeueHaasDisplay-Roman;
+  font-family: Iansui094-Regular;
   letter-spacing: 0.25px;
   font-size: 1rem;
   text-align: center;

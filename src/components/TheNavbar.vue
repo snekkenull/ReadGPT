@@ -13,7 +13,7 @@
 
       <div class="nav-right">
         <div class="github-logo">
-          <a href="https://github.com/Rustam-Fozilov/ReadGPT" target="_blank">
+          <a href="https://github.com/snekkenull/YueGPT" target="_blank">
             <span>
                 <img src="@/assets/image/github-mark.svg" alt="Github logo">
             </span>

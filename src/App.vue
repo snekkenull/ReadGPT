@@ -42,8 +42,8 @@ export default {
 
         this.loader = true
         const response = await openai.createCompletion({
-          model: 'text-davinci-003',
-          prompt: `list of recommendations for what to read, like book "${prompt}"`,
+          model: 'gpt-3.5-turbo',
+          messages: [{role: "user", content: "list of recommendations for what to read, like book '${prompt}', just output the books name, no any comment."}],
           max_tokens: 200,
           temperature: 0.5,
         })
@@ -68,18 +68,18 @@ export default {
 }
 
 @font-face {
-  font-family: 'NeueHaasDisplay-Bold';
-  src: url('@/assets/fonts/NeueHaasDisplay-Bold.ttf');
+  font-family: 'Iansui094-Regular';
+  src: url('@/assets/fonts/Iansui094-Regular.ttf');
 }
 
 @font-face {
-  font-family: 'NeueHaasDisplay-Medium';
-  src: url('@/assets/fonts/NeueHaasDisplay-Medium.ttf');
+  font-family: 'Iansui094-Regular';
+  src: url('@/assets/fonts/Iansui094-Regular.ttf');
 }
 
 @font-face {
-  font-family: 'NeueHaasDisplay-Roman';
-  src: url('@/assets/fonts/NeueHaasDisplay-Roman.ttf');
+  font-family: 'Iansui094-Regular';
+  src: url('@/assets/fonts/Iansui094-Regular.ttf');
 }
 
 html, body {

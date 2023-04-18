@@ -53,7 +53,7 @@ export default defineComponent({
 }
 
 .result-text {
-  font-family: NeueHaasDisplay-Roman;
+  font-family: Iansui094-Regular;
   letter-spacing: 0.3px;
   font-size: 1.2rem;
   text-align: left;
@@ -61,7 +61,7 @@ export default defineComponent({
 
 .regenerate-btn button {
   font-size: 1rem;
-  font-family: NeueHaasDisplay-Roman;
+  font-family: Iansui094-Regular;
   padding: 10px 20px;
   opacity: 0.5;
   cursor: pointer;

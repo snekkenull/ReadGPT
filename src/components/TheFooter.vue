@@ -1,9 +1,9 @@
 <template>
   <div class="footer-container">
     <footer>
-      <div class="footer-text">Powered by <a href="https://openai.com/" target="_blank">OpenAI</a>, <a href="https://vercel.com/" target="_blank">Vercel.</a></div>
+      <div class="footer-text">由<a href="https://openai.com/" target="_blank">OpenAI</a>, <a href="https://vercel.com/" target="_blank">Vercel.</a></div>驅動
       <div class="footer-img">
-        <a href="https://github.com/Rustam-Fozilov/ReadGPT" target="_blank">
+        <a href="https://github.com/snekkenull/YueGPT" target="_blank">
           <span>
             <img src="@/assets/image/github-mark.svg" alt="Github">
           </span>
@@ -38,13 +38,13 @@ footer {
 }
 
 .footer-text {
-  font-family: NeueHaasDisplay-Roman;
+  font-family: Iansui094-Regular;
   font-size: 1rem;
   opacity: 0.5;
 }
 
 .footer-text a {
-  font-family: NeueHaasDisplay-Medium;
+  font-family: Iansui094-Regular;
   color: black;
   text-decoration: none;
 }
