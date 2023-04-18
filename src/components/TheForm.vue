@@ -98,7 +98,7 @@ export default defineComponent({
 }
 
 .form-container form input {
-  font-family: Iansui094-Regular;
+  font-family: HarmonyOS_Sans_Regular;
   letter-spacing: 0.25px;
   width: 90%;
   border: none;

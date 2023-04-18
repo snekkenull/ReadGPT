@@ -50,7 +50,7 @@ export default {
 }
 
 .logo {
-  width: 140px;
+  width: 48px;
 }
 
 .logo img {

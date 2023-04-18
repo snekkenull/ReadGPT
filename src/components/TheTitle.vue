@@ -30,7 +30,7 @@ export default {
 
 .title {
   font-size: 3rem;
-  font-family: Iansui094-Regular;
+  font-family: HarmonyOS_Sans_Bold;
   text-align: center;
 }
 
@@ -39,7 +39,7 @@ export default {
 }
 
 .subtitle {
-  font-family: Iansui094-Regular;
+  font-family: HarmonyOS_Sans_Medium;
   letter-spacing: 0.25px;
   font-size: 1rem;
   text-align: center;

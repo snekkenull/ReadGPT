@@ -75,18 +75,18 @@ export default {
 }
 
 @font-face {
-  font-family: 'Iansui094-Regular';
-  src: url('@/assets/fonts/Iansui094-Regular.ttf');
+  font-family: 'HarmonyOS_Sans_Bold';
+  src: url('@/assets/fonts/HarmonyOS_Sans_Bold.ttf');
 }
 
 @font-face {
-  font-family: 'Iansui094-Regular';
-  src: url('@/assets/fonts/Iansui094-Regular.ttf');
+  font-family: 'HarmonyOS_Sans_Medium';
+  src: url('@/assets/fonts/HarmonyOS_Sans_Medium.ttf');
 }
 
 @font-face {
-  font-family: 'Iansui094-Regular';
-  src: url('@/assets/fonts/Iansui094-Regular.ttf');
+  font-family: 'HarmonyOS_Sans_Regular';
+  src: url('@/assets/fonts/HarmonyOS_Sans_Regular.ttf');
 }
 
 html, body {

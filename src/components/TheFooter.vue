@@ -38,13 +38,13 @@ footer {
 }
 
 .footer-text {
-  font-family: Iansui094-Regular;
+  font-family: HarmonyOS_Sans_Regular;
   font-size: 1rem;
   opacity: 0.5;
 }
 
 .footer-text a {
-  font-family: Iansui094-Regular;
+  font-family: HarmonyOS_Sans_Bold;
   color: black;
   text-decoration: none;
 }

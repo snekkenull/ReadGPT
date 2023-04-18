@@ -53,7 +53,7 @@ export default defineComponent({
 }
 
 .result-text {
-  font-family: Iansui094-Regular;
+  font-family: HarmonyOS_Sans_Medium;
   letter-spacing: 0.3px;
   font-size: 1.2rem;
   text-align: left;
@@ -61,7 +61,7 @@ export default defineComponent({
 
 .regenerate-btn button {
   font-size: 1rem;
-  font-family: Iansui094-Regular;
+  font-family: HarmonyOS_Sans_Regular;
   padding: 10px 20px;
   opacity: 0.5;
   cursor: pointer;
