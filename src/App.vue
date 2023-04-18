@@ -17,42 +17,54 @@ import TheFooter from "@/components/TheFooter.vue";
 import TheTitle from "@/components/TheTitle.vue";
 import TheForm from "@/components/TheForm.vue";
 import TheResult from "@/components/TheResult.vue";
-import openai from "openai";
+import { Configuration, OpenAIApi } from "openai";
 
 export default {
-  name: 'App',
-  components: {TheResult, TheForm, TheTitle, TheFooter, TheNavbar},
+  name: "App",
+  components: { TheResult, TheForm, TheTitle, TheFooter, TheNavbar },
 
   data() {
     return {
       result: null,
       loader: false,
-    }
+    };
   },
 
   methods: {
     async submit(prompt) {
       try {
-        openai.apiKey = process.env.VUE_APP_API_KEY;
+        const config = new Configuration({
+          organization: process.env.VUE_APP_ORG_ID,
+          apiKey: process.env.VUE_APP_API_KEY,
+        });
 
-        this.loader = true
-        const response = await openai.Completion.create({
-          engine: 'gpt-3.5-turbo',
-          prompt: `list of recommendations for what to read, like book '${prompt}', just output the books name, no any comment.`,
+        const openai = new OpenAIApi(config);
+
+        this.loader = true;
+        const response = await openai.createChatCompletion({
+          model: "gpt-3.5-turbo",
+          messages: [
+            {
+              role: "user",
+              content: `list of recommendations for what to read, like book '${prompt}', just output the books name, no any comment.`,
+            },
+          ],
           max_tokens: 200,
           temperature: 0.5,
-        })
+        });
 
-        this.result = response.choices[0].text.split('\n').filter((item) => item !== '')
-        this.loader = false
-
+        this.result = response.data.choices[0].message.content
+          .split("\n")
+          .filter((item) => item !== "");
+        this.loader = false;
       } catch (e) {
-        console.log(e)
+        console.log(e);
       }
-    }
-  }
+    },
+  },
 };
 </script>
+
 
 <style>
 
