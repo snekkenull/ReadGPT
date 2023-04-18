@@ -1,7 +1,7 @@
 <template>
   <div class="footer-container">
     <footer>
-      <div class="footer-text">由<a href="https://openai.com/" target="_blank">OpenAI</a>, <a href="https://vercel.com/" target="_blank">Vercel.</a></div>驅動
+      <div class="footer-text">由 <a href="https://openai.com/" target="_blank">OpenAI</a>, <a href="https://vercel.com/" target="_blank">Vercel.</a>驅動</div>
       <div class="footer-img">
         <a href="https://github.com/snekkenull/YueGPT" target="_blank">
           <span>
